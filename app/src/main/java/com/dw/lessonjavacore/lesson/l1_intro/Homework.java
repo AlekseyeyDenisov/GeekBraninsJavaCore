@@ -2,10 +2,10 @@ package com.dw.lessonjavacore.lesson.l1_intro;
 
 public class Homework {
     public static void main(String[] args) {
-        System.out.println("Первое задание: " +jobOne(2,3,4,2));
-        System.out.println("Второе задание: " +jobTwo(12,5));
+        System.out.println("Задание №1 " +jobOne(2,3,4,2));
+        System.out.println("Задание №2 " +jobTwo(12,5));
         jobThree(-13);
-        System.out.println("Второе четвертое: " +jobFour(-5));
+        System.out.println("Задание №4 " +jobFour(-5));
         jobFive("Василий");
         jobSix(500);
     }
@@ -24,25 +24,29 @@ public class Homework {
     }
 
     public static void jobThree (int a){
+        String jobNumber = "Задание №3 ";
         if (a >= 0){
-            System.out.println("Положительное  число");
+            System.out.println(jobNumber +"Положительное  число");
             return;
         }
-        System.out.println("Отрицательное  число");
+        System.out.println(jobNumber +"Отрицательное  число");
     }
     public static boolean jobFour(int a){
         return a >= 0;
     }
 
     public static void jobFive(String name){
-        System.out.println("«Привет "+ name + "!»");
+        String jobNumber = "Задание №5 ";
+        System.out.println(jobNumber +"«Привет "+ name + "!»");
     }
 
     public static void jobSix(int year){
+        String jobNumber = "Задание №6 ";
         if (year % 4 == 0 && !(year % 100 == 0 && !(year % 400 == 0)))
-            System.out.println("Год високосный");
+            System.out.println(jobNumber + "Год високосный");
         else
-            System.out.println("Год не високосный");
+            System.out.println(jobNumber + "Год не високосный");
     }
+
 
 }

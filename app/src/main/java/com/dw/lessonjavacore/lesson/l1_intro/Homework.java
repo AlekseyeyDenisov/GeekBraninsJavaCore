@@ -32,7 +32,7 @@ public class Homework {
         System.out.println(jobNumber +"Отрицательное  число");
     }
     public static boolean jobFour(int a){
-        return a >= 0;
+        return a > 0;
     }
 
     public static void jobFive(String name){

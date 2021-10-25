@@ -8,8 +8,25 @@ public class HomeWork2 {
         fillTheArray();
         numberSelection();
         squareTwoIntegerArray(10);
+        minimumMaximumElements();
 
 
+
+    }
+
+    private static void minimumMaximumElements() {
+        int[] arr = { 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+        int varMinimum = arr[0];
+        int varMaximum = arr[0];
+        for (int i = 0; i < arr.length; i++){
+                if (varMinimum > arr[i]){
+                    varMinimum = arr[i];
+                }else if (varMaximum < arr[i]){
+                    varMaximum = arr[i];
+                }
+        }
+        System.out.println("Минимальное значение " + varMinimum);
+        System.out.println("Максимальное значение " + varMaximum);
     }
 
     private static void squareTwoIntegerArray(int var) {

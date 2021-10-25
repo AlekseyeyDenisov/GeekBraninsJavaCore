@@ -7,7 +7,7 @@ public class HomeWork2 {
         arrayIntegerReplace();
         fillTheArray();
         numberSelection();
-        squareTwoIntegerArray(8);
+        squareTwoIntegerArray(10);
 
 
     }
@@ -17,9 +17,11 @@ public class HomeWork2 {
         for (int x = 0, i = 0; x < array.length; x++, i++) {
             for (int y = 0; y < array[x].length; y++) {
                 int rev = var - 1 - i;
-                array[x][y] = 0;
-                array[x][i] = 1;
-                array[x][rev] = 1;
+                if (y == i || y == rev){
+                    array[x][y] = 1;
+                }else {
+                    array[x][y] = 0;
+                }
             }
         }
         print2dArray(array);

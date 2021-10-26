@@ -9,13 +9,18 @@ public class HomeWork2 {
         numberSelection();
         squareTwoIntegerArray(10);
         minimumMaximumElements();
+        checkBalance();
 
 
 
     }
 
+    private static void checkBalance() {
+    }
+
+
     private static void minimumMaximumElements() {
-        int[] arr = { 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+        int[] arr = { 8, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         int varMinimum = arr[0];
         int varMaximum = arr[0];
         for (int i = 0; i < arr.length; i++){
@@ -31,10 +36,10 @@ public class HomeWork2 {
 
     private static void squareTwoIntegerArray(int var) {
         int[][] array = new int[var][var];
-        for (int x = 0, i = 0; x < array.length; x++, i++) {
+        for (int x = 0; x < array.length; x++) {
             for (int y = 0; y < array[x].length; y++) {
-                int rev = var - 1 - i;
-                if (y == i || y == rev){
+                int rev = var - 1 - x;
+                if (y == x || y == rev){
                     array[x][y] = 1;
                 }else {
                     array[x][y] = 0;

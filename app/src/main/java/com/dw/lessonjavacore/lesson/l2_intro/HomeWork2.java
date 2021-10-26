@@ -36,11 +36,14 @@ public class HomeWork2 {
         int[][] array = new int[var][var];
         for (int x = 0, i = array.length; x < array.length; x++, i--) {
             for (int y = 0; y < array[x].length; y++) {
-                if (y == x || y == i -1){
-                    array[x][y] = 1;
-                }else {
-                    array[x][y] = 0;
-                }
+//                if (y == x || y == i -1){
+//                    array[x][y] = 1;
+//                }else {
+//                    array[x][y] = 0;
+//                }
+                array[x][y] = 0;
+                array[x][x] = 1;
+                array[x][i -1] = 1;
             }
         }
         print2dArray(array);

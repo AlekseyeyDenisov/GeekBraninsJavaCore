@@ -6,7 +6,7 @@ public class Classwork {
     public static void main(String[] args) {
         //vendingSWitch(2);
         //whilePre();
-        //whilePost();
+        whilePost();
         //simpleForExample();
         //simpleArr();
         //foreachExample();

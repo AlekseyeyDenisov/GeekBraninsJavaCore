@@ -33,6 +33,7 @@ public class HomeWork2 {
     }
 
     private static void squareTwoIntegerArray(int var) {
+        int value = 8;
         int[][] array = new int[var][var];
         for (int x = 0, i = array.length; x < array.length; x++, i--) {
             for (int y = 0; y < array[x].length; y++) {
@@ -41,22 +42,12 @@ public class HomeWork2 {
 //                }else {
 //                    array[x][y] = 0;
 //                }
-                array[x][y] = 0;
-                array[x][x] = 1;
-                array[x][i -1] = 1;
+                array[x][x] = value;
+                array[x][i -1] = value;
+                //array[x][y] = 0;
             }
         }
         print2dArray(array);
-    }
-
-    public static void print2dArray(int[][] arr) {
-        for (int x = 0; x < arr.length; x++) {
-            for (int y = 0; y < arr[x].length; y++) {
-                System.out.print(arr[x][y]);
-            }
-            System.out.println();
-        }
-
     }
 
     private static void numberSelection() {
@@ -88,6 +79,16 @@ public class HomeWork2 {
             else arr[i] = 0;
         }
         System.out.println("arrayIntegerReplace prepend " + Arrays.toString(arr));
+    }
+
+    public static void print2dArray(int[][] arr) {
+        for (int x = 0; x < arr.length; x++) {
+            for (int y = 0; y < arr[x].length; y++) {
+                System.out.print(arr[x][y]);
+            }
+            System.out.println();
+        }
+
     }
 
 

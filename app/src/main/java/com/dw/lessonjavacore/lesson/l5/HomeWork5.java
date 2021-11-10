@@ -16,6 +16,7 @@ public class HomeWork5 {
 
     private static void printPersonOlderInt(Person[] persArray, int age) {
         for (int i = 0; i < persArray.length; i++ ){
+        //for (Person )
             if (persArray[i].getAge() > age){
                 persArray[i].print();
             }

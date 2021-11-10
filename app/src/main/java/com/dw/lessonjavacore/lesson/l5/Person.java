@@ -18,11 +18,12 @@ public class Person {
     }
 
     public void print(){
-        System.out.println("ФИО: " +lastnameName);
-        System.out.println("Email: " +email );
-        System.out.println("Телефон: " +phone );
-        System.out.println("Зарплата: " +salary );
-        System.out.println("Возраст: " +age );
+//        System.out.println("ФИО: " +lastnameName);
+//        System.out.println("Email: " +email );
+//        System.out.println("Телефон: " +phone );
+//        System.out.println("Зарплата: " +salary );
+//        System.out.println("Возраст: " +age );
+        //System.out.printf("ФИО: %s Email: %s Телефон: %s Зарплата:%s Возраст: %s",this.lastnameName);
     }
 
     public int getAge() {

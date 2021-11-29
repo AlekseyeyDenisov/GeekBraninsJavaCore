@@ -19,6 +19,26 @@ public class HomeWork {
 
     }
 
+    private static HashMap<String, Integer> getWordsCount(String[] arr) {
+        HashMap<String, Integer> map = new HashMap<>();
+//        for (int i = 0; i < arr.length; i++) {
+//            String word = arr[i];
+//            map.put(word, map.getOrDefault(word, 0) + 1);
+//        }
+
+        for (String s : arr) {
+//            map.merge(s, 1, Integer::sum);
+            map.merge(s, 1, (value1, value2) -> value1 + value2);
+//            map.merge(s, 1, new BiFunction<Integer, Integer, Integer>() {
+//                @Override
+//                public Integer apply(Integer integer, Integer integer2) {
+//                    return integer + integer2;
+//                }
+//            });
+        }
+        return map;
+    }
+
     private static void taskOne() {
         List<String> listArray =
                 Arrays.asList(

@@ -39,7 +39,7 @@ public class HomeWork {
 
         Box<Apple> appleBox1 = new Box<>();
 
-        appleBox.pourTo(appleBox1);
+        appleBox1.pour(appleBox);
         System.out.printf("вес новой коробки с яблокоми  %s старая коробка %s\n",
                 appleBox1.getWeight(),
                 appleBox.getWeight()

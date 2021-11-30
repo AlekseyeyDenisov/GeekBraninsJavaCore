@@ -33,8 +33,8 @@ public class Box<T extends Fruit> {
         return Math.abs(this.getWeight() - other.getWeight()) < 0.001;
     }
 
-    public void pourTo(Box <T>anotherBox){
-        anotherBox.box.addAll(box);
-        box.clear();
+    public void pour(Box <T>anotherBox){
+        box.addAll(anotherBox.box);
+        anotherBox.box.clear();
     }
 }

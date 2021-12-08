@@ -8,7 +8,7 @@ public class Classwork {
         //whilePre();
         whilePost();
         //simpleForExample();
-        //simpleArr();
+        simpleArr();
         //foreachExample();
         //stringArray();
 
